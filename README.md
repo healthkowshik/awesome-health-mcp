@@ -12,3 +12,19 @@
 - **[flexpa/mcp-fhir](https://github.com/flexpa/mcp-fhir)** — Lightweight MCP server for FHIR resource search and read operations.
 - **[rkirkendall/medplum-mcp](https://github.com/rkirkendall/medplum-mcp)** — MCP server for Medplum FHIR with comprehensive CRUD tooling across clinical resources.
 - **[profliuhao/MedixHub](https://github.com/profliuhao/MedixHub)** — MCP server bundling medical APIs (OpenTargets, FDA drug labels, Monarch) via a single tool registry.
+- **[andybrandt/mcp-simple-pubmed](https://github.com/andybrandt/mcp-simple-pubmed)** — MCP server for searching and querying PubMed medical literature.
+- **[JackKuo666/ClinicalTrials-MCP-Server](https://github.com/JackKuo666/ClinicalTrials-MCP-Server)** — MCP server interface for searching and accessing ClinicalTrials.gov data.
+- **[Cicatriiz/pophive-mcp-server](https://github.com/Cicatriiz/pophive-mcp-server)** — MCP server for Yale PopHIVE near real-time public health data plus HHS and CDC datasets.
+- **[JamesANZ/medical-mcp](https://github.com/JamesANZ/medical-mcp)** — MCP server that aggregates medical data from FDA, WHO, PubMed, Google Scholar, and RxNorm APIs.
+- **[vitorpavinato/ncbi-mcp-server](https://github.com/vitorpavinato/ncbi-mcp-server)** — MCP server for accessing NCBI resources including PubMed and related biomedical datasets.
+- **[jmandel/health-record-mcp](https://github.com/jmandel/health-record-mcp)** — MCP server that connects to EHR systems and exposes clinical record data.
+- **[eka-care/eka_mcp_server](https://github.com/eka-care/eka_mcp_server)** — MCP server for healthcare workflows including drug and clinical protocol data.
+- **[the-momentum/apple-health-mcp-server](https://github.com/the-momentum/apple-health-mcp-server)** — MCP server for querying Apple Health data using natural-language requests.
+- **[longevity-genie/gget-mcp](https://github.com/longevity-genie/gget-mcp)** — Bioinformatics MCP server wrapping gget functions for genomics and biomedical analysis.
+- **[Augmented-Nature/Augmented-Nature-UniProt-MCP-Server](https://github.com/Augmented-Nature/Augmented-Nature-UniProt-MCP-Server)** — MCP server for the UniProt protein database with protein-centric analysis tools.
+- **[Nexgene-Research/nexonco-mcp](https://github.com/Nexgene-Research/nexonco-mcp)** — Oncology-focused MCP server for precision medicine and clinical evidence search.
+- **[taehojo/alphagenome-mcp](https://github.com/taehojo/alphagenome-mcp)** — MCP server for AI-assisted genomic variant analysis workflows.
+- **[Augmented-Nature/STRING-db-MCP-Server](https://github.com/Augmented-Nature/STRING-db-MCP-Server)** — MCP server for STRING protein interaction network analysis and enrichment queries.
+- **[longevity-genie/opengenes-mcp](https://github.com/longevity-genie/opengenes-mcp)** — MCP server for querying OpenGenes aging and longevity datasets.
+- **[cafferychen777/ChatSpatial](https://github.com/cafferychen777/ChatSpatial)** — MCP-powered spatial transcriptomics analysis through conversational workflows.
+- **[de-grave/onekgpd-mcp](https://github.com/de-grave/onekgpd-mcp)** — MCP server for the 1000 Genomes Project dataset and variant-oriented exploration.
