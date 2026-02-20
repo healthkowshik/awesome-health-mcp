@@ -18,6 +18,8 @@
 - **[cyanheads/clinicaltrialsgov-mcp-server](https://github.com/cyanheads/clinicaltrialsgov-mcp-server)** — ClinicalTrials.gov MCP server for trial discovery and structured trial data access.
 - **[genomoncology/biomcp](https://github.com/genomoncology/biomcp)** — Biomedical MCP server for clinical trials, literature, and genomic variant data access.
 - **[JackKuo666/ClinicalTrials-MCP-Server](https://github.com/JackKuo666/ClinicalTrials-MCP-Server)** — MCP server interface for searching and accessing ClinicalTrials.gov data.
+- **[openpharma-org/biorxiv-mcp](https://github.com/openpharma-org/biorxiv-mcp)** — MCP server for bioRxiv and medRxiv preprint search and retrieval.
+- **[Sage-Bionetworks/synapse-mcp](https://github.com/Sage-Bionetworks/synapse-mcp)** — MCP server for accessing Synapse biomedical research entities, metadata, and provenance.
 - **[vitorpavinato/ncbi-mcp-server](https://github.com/vitorpavinato/ncbi-mcp-server)** — MCP server for accessing NCBI resources including PubMed and related biomedical datasets.
 
 ## Public Health & Multi-Source Medical Data
@@ -43,4 +45,5 @@
 - **[longevity-genie/gget-mcp](https://github.com/longevity-genie/gget-mcp)** — Bioinformatics MCP server wrapping gget functions for genomics and biomedical analysis.
 - **[longevity-genie/opengenes-mcp](https://github.com/longevity-genie/opengenes-mcp)** — MCP server for querying OpenGenes aging and longevity datasets.
 - **[Nexgene-Research/nexonco-mcp](https://github.com/Nexgene-Research/nexonco-mcp)** — Oncology-focused MCP server for precision medicine and clinical evidence search.
+- **[openpharma-org/chembl-mcp](https://github.com/openpharma-org/chembl-mcp)** — MCP server for ChEMBL bioactive compound and bioactivity data access.
 - **[taehojo/alphagenome-mcp](https://github.com/taehojo/alphagenome-mcp)** — MCP server for AI-assisted genomic variant analysis workflows.
