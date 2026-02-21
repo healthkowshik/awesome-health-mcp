@@ -16,14 +16,46 @@ fi
 
 count="$(grep -Ec '^- \*\*\[[^]]+/[^]]+\]\(https://github\.com/[^)]+\)\*\* — ' "$README_PATH")"
 tmp_file="$(mktemp)"
-badge_line="> <!-- MCP_SERVER_BADGE_START -->![MCP servers](https://img.shields.io/badge/MCP%20servers-${count}-2ea44f)<!-- MCP_SERVER_BADGE_END -->"
+badge_markdown="![MCP servers](https://img.shields.io/badge/MCP%20servers-${count}-2ea44f)"
 
-awk -v badge_line="$badge_line" '
+awk -v badge_markdown="$badge_markdown" '
 {
-  if ($0 ~ /MCP_SERVER_BADGE_START/ || $0 ~ /MCP_SERVER_COUNT_START/) {
-    print badge_line
+  # Legacy inline format: start and end marker on one line.
+  if ($0 ~ /MCP_SERVER_BADGE_START/ && $0 ~ /MCP_SERVER_BADGE_END/) {
+    print "<!-- MCP_SERVER_BADGE_START -->"
+    print badge_markdown
+    print "<!-- MCP_SERVER_BADGE_END -->"
     next
   }
+
+  # Start marker begins a managed badge block.
+  if ($0 ~ /MCP_SERVER_BADGE_START/) {
+    print "<!-- MCP_SERVER_BADGE_START -->"
+    print badge_markdown
+    in_badge_block = 1
+    next
+  }
+
+  # End marker closes a managed badge block.
+  if ($0 ~ /MCP_SERVER_BADGE_END/) {
+    print "<!-- MCP_SERVER_BADGE_END -->"
+    in_badge_block = 0
+    next
+  }
+
+  # Skip stale lines inside the managed badge block.
+  if (in_badge_block == 1) {
+    next
+  }
+
+  # Legacy count marker format migration.
+  if ($0 ~ /MCP_SERVER_COUNT_START/) {
+    print "<!-- MCP_SERVER_BADGE_START -->"
+    print badge_markdown
+    print "<!-- MCP_SERVER_BADGE_END -->"
+    next
+  }
+
   print
 }
 ' "$README_PATH" > "$tmp_file"
