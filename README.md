@@ -3,7 +3,7 @@
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
 <!-- MCP_SERVER_BADGE_START -->
-![MCP servers](https://img.shields.io/badge/MCP%20servers-34-2ea44f)
+![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-34-2ea44f)
 <!-- MCP_SERVER_BADGE_END -->
 
 ## Clinical Interoperability & EHR

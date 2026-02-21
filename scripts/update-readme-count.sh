@@ -16,7 +16,7 @@ fi
 
 count="$(grep -Ec '^- \*\*\[[^]]+/[^]]+\]\(https://github\.com/[^)]+\)\*\* — ' "$README_PATH")"
 tmp_file="$(mktemp)"
-badge_markdown="![MCP servers](https://img.shields.io/badge/MCP%20servers-${count}-2ea44f)"
+badge_markdown="![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-${count}-2ea44f)"
 
 awk -v badge_markdown="$badge_markdown" '
 {
