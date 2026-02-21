@@ -36,6 +36,7 @@ Follow these rules before opening a PR:
 5. Pick the best-fit existing section.
 6. Insert the entry in alphabetical order by `owner/repo`.
 7. Keep the description concise and factual.
+8. Run `./scripts/update-readme-count.sh` to refresh the total MCP server count.
 
 ## PR checklist
 
@@ -49,6 +50,7 @@ Before submitting, confirm all of the following:
 - [ ] Entry is in the right section.
 - [ ] Entry is alphabetized within the section.
 - [ ] Total number of sections is 5 or fewer.
+- [ ] MCP server count in `README.md` is up to date.
 
 ## Notes
 

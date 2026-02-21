@@ -2,6 +2,8 @@
 
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
+<!-- MCP_SERVER_BADGE_START -->![MCP servers](https://img.shields.io/badge/MCP%20servers-34-2ea44f)<!-- MCP_SERVER_BADGE_END -->
+
 ## Clinical Interoperability & EHR
 
 - **[eka-care/eka_mcp_server](https://github.com/eka-care/eka_mcp_server)** — MCP server for healthcare workflows including drug and clinical protocol data.
