@@ -3,7 +3,7 @@
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
 <!-- MCP_SERVER_BADGE_START -->
-![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-34-2ea44f)
+![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-36-2ea44f)
 <!-- MCP_SERVER_BADGE_END -->
 
 ## Clinical Interoperability & EHR
@@ -18,8 +18,10 @@
 
 ## Medical Research & Trials
 
+- **[aeghnnsw/pubmed-mcp](https://github.com/aeghnnsw/pubmed-mcp)** — MCP server for PubMed E-utilities search and article retrieval.
 - **[andybrandt/mcp-simple-pubmed](https://github.com/andybrandt/mcp-simple-pubmed)** — MCP server for searching and querying PubMed medical literature.
 - **[cyanheads/clinicaltrialsgov-mcp-server](https://github.com/cyanheads/clinicaltrialsgov-mcp-server)** — ClinicalTrials.gov MCP server for trial discovery and structured trial data access.
+- **[cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server)** — MCP server for PubMed search, analysis, and research workflows via NCBI E-utilities.
 - **[genomoncology/biomcp](https://github.com/genomoncology/biomcp)** — Biomedical MCP server for clinical trials, literature, and genomic variant data access.
 - **[grll/pubmedmcp](https://github.com/grll/pubmedmcp)** — MCP server for searching and fetching PubMed articles.
 - **[JackKuo666/ClinicalTrials-MCP-Server](https://github.com/JackKuo666/ClinicalTrials-MCP-Server)** — MCP server interface for searching and accessing ClinicalTrials.gov data.
