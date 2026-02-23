@@ -3,7 +3,7 @@
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
 <!-- MCP_SERVER_BADGE_START -->
-![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-36-2ea44f)
+![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-38-2ea44f)
 <!-- MCP_SERVER_BADGE_END -->
 
 ## Clinical Interoperability & EHR
@@ -49,6 +49,7 @@
 - **[Augmented-Nature/STRING-db-MCP-Server](https://github.com/Augmented-Nature/STRING-db-MCP-Server)** — MCP server for STRING protein interaction network analysis and enrichment queries.
 - **[cafferychen777/ChatSpatial](https://github.com/cafferychen777/ChatSpatial)** — MCP-powered spatial transcriptomics analysis through conversational workflows.
 - **[de-grave/onekgpd-mcp](https://github.com/de-grave/onekgpd-mcp)** — MCP server for the 1000 Genomes Project dataset and variant-oriented exploration.
+- **[kozo2/bioruby-mcp-server](https://github.com/kozo2/bioruby-mcp-server)** — MCP server for BioRuby KEGG queries across pathways, compounds, enzymes, and related molecular data.
 - **[longevity-genie/biothings-mcp](https://github.com/longevity-genie/biothings-mcp)** — MCP server for BioThings APIs (genes, variants, chemicals, taxonomy).
 - **[longevity-genie/gget-mcp](https://github.com/longevity-genie/gget-mcp)** — Bioinformatics MCP server wrapping gget functions for genomics and biomedical analysis.
 - **[longevity-genie/opengenes-mcp](https://github.com/longevity-genie/opengenes-mcp)** — MCP server for querying OpenGenes aging and longevity datasets.
@@ -56,3 +57,4 @@
 - **[nickzren/opentargets-mcp](https://github.com/nickzren/opentargets-mcp)** — MCP server exposing Open Targets Platform data for gene–disease–drug associations.
 - **[openpharma-org/chembl-mcp](https://github.com/openpharma-org/chembl-mcp)** — MCP server for ChEMBL bioactive compound and bioactivity data access.
 - **[taehojo/alphagenome-mcp](https://github.com/taehojo/alphagenome-mcp)** — MCP server for AI-assisted genomic variant analysis workflows.
+- **[tianqitang1/enrichr-mcp-server](https://github.com/tianqitang1/enrichr-mcp-server)** — MCP server for Enrichr gene set enrichment analysis across disease, pathway, and phenotype libraries.
