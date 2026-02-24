@@ -1,21 +1,16 @@
 <!--
   Sync Impact Report
   ==================
-  Version change: (none) → 1.0.0 (initial ratification)
-  Modified principles: N/A (first version)
-  Added sections:
-    - Core Principles (5 principles)
-    - Curation Standards
-    - Contribution Workflow
-    - Governance
+  Version change: 1.0.0 → 1.0.1 (PATCH)
+  Modified principles:
+    - III. Consistent Formatting — entry format changed from
+      bold+em-dash to plain link+hyphen to comply with awesome-lint
+  Added sections: N/A
   Removed sections: N/A
   Templates requiring updates:
     - .specify/templates/plan-template.md — ✅ no update needed
-      (Constitution Check section is generic; principles apply at review time)
     - .specify/templates/spec-template.md — ✅ no update needed
-      (User story and requirements sections are generic)
     - .specify/templates/tasks-template.md — ✅ no update needed
-      (Task phases are generic; no principle-specific task types required)
   Follow-up TODOs: none
 -->
 
@@ -57,7 +52,7 @@ readers' time and erodes trust in the list.
 Every entry MUST use this exact format:
 
 ```markdown
-- **[owner/repo](https://github.com/owner/repo)** — One-line description.
+- [owner/repo](https://github.com/owner/repo) - One-line description.
 ```
 
 Additional formatting rules:
@@ -150,4 +145,4 @@ It supersedes any conflicting guidance found elsewhere in the repository.
 **Compliance review**: All PRs and reviews MUST verify adherence to
 these principles. Non-compliant entries MUST be corrected before merge.
 
-**Version**: 1.0.0 | **Ratified**: 2026-02-24 | **Last Amended**: 2026-02-24
+**Version**: 1.0.1 | **Ratified**: 2026-02-24 | **Last Amended**: 2026-02-24

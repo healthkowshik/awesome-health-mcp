@@ -38,19 +38,20 @@ and confirm it produces output indicating pass or listing violations.
 
 ---
 
-### User Story 2 - Automated CI Linting on Pull Requests (Priority: P2)
+### User Story 2 - Automated CI Linting (Priority: P2)
 
-A contributor opens a pull request that modifies `README.md`. A CI
-check automatically runs awesome-lint and reports pass/fail on the
-PR, preventing merges that introduce formatting or quality violations.
+A contributor opens a pull request that modifies `README.md`, or a
+maintainer pushes directly to the main branch. In both cases a CI
+check automatically runs awesome-lint and reports pass/fail,
+preventing formatting or quality violations from persisting.
 
-**Why this priority**: Automated enforcement on PRs is the primary
-value of integrating a linter — it catches issues before they reach
-the main branch without relying on manual review.
+**Why this priority**: Automated enforcement is the primary value of
+integrating a linter — it catches issues without relying on manual
+review, whether changes arrive via PR or direct push.
 
 **Independent Test**: Open a PR with a deliberately malformed entry
 and confirm the CI check fails. Fix the entry and confirm the check
-passes.
+passes. Push a clean commit to main and confirm it passes.
 
 **Acceptance Scenarios**:
 
@@ -65,34 +66,10 @@ passes.
 3. **Given** a PR with a clean `README.md`,
    **When** the CI check completes,
    **Then** the PR shows a passing status check.
-
----
-
-### User Story 3 - Suppress Intentional Deviations (Priority: P3)
-
-The repository intentionally deviates from some default awesome-lint
-rules (e.g., the list uses a custom badge format or lacks a Table of
-Contents that awesome-lint expects). The maintainer configures rule
-suppressions so that intentional deviations do not produce false
-positives, while all other rules remain active.
-
-**Why this priority**: Without rule suppression, persistent false
-positives train maintainers to ignore linter output, defeating its
-purpose.
-
-**Independent Test**: Add a lint-disable comment for a known
-intentional deviation and confirm the linter no longer flags it while
-still catching other violations.
-
-**Acceptance Scenarios**:
-
-1. **Given** `README.md` contains an intentional deviation from an
-   awesome-lint rule,
-   **When** the appropriate lint-disable comment is added,
-   **Then** the linter no longer reports that specific violation.
-2. **Given** rule suppressions are in place,
-   **When** a new, unrelated violation is introduced,
-   **Then** the linter still catches and reports it.
+4. **Given** a maintainer pushes a commit to main,
+   **When** the CI pipeline runs,
+   **Then** awesome-lint executes and the result is visible as a
+   commit status.
 
 ---
 
@@ -114,12 +91,16 @@ still catching other violations.
 - **FR-002**: A convenience script or npm script MUST allow running
   the linter via a single command from the repository root.
 - **FR-003**: A GitHub Actions workflow MUST run awesome-lint on
-  every pull request that modifies `README.md`.
+  every pull request that modifies `README.md` and on every push
+  to the main branch.
 - **FR-004**: The CI workflow MUST report pass/fail as a GitHub
-  status check on the pull request.
-- **FR-005**: Intentional rule deviations MUST be suppressed using
-  awesome-lint's inline comment directives so the linter reports
-  zero false positives on the current `README.md`.
+  status check on pull requests and as a commit status on pushes
+  to main.
+- **FR-005**: The current `README.md` MUST pass all default
+  awesome-lint rules with zero violations. Any existing violations
+  MUST be fixed in the README itself. The sole permitted exception
+  is the `awesome-badge` rule, which may be suppressed because this
+  list is not part of the official awesome directory.
 - **FR-006**: The linter configuration MUST be checked into the
   repository so all contributors use the same rules.
 
@@ -129,8 +110,8 @@ still catching other violations.
   declares awesome-lint as a dependency and defines the lint script.
 - **CI workflow**: The GitHub Actions workflow file that triggers
   linting on pull requests.
-- **Rule suppressions**: Inline `<!--lint disable ...-->` comments
-  in `README.md` for intentional deviations.
+- **README fixes**: Any modifications to `README.md` needed to pass
+  all default awesome-lint rules without suppressions.
 
 ## Success Criteria *(mandatory)*
 
@@ -142,9 +123,19 @@ still catching other violations.
 - **SC-002**: Every pull request that modifies `README.md` receives
   an automated lint check result within 2 minutes of opening.
 - **SC-003**: The current `README.md` passes the linter with zero
-  errors after rule suppressions are configured.
+  errors using all default rules and no suppressions.
 - **SC-004**: A deliberately malformed entry introduced in a test PR
   is caught by the CI lint check before merge.
+
+## Clarifications
+
+### Session 2026-02-24
+
+- Q: Should User Story 3 (Suppress Intentional Deviations) and FR-005
+  be removed from scope? → A: Remove US3 and FR-005 entirely. README
+  must pass all default rules. Fix any violations in README.
+- Q: Should the CI workflow also run on direct pushes to main? → A:
+  Yes. Run on both PRs and pushes to main for full coverage.
 
 ## Assumptions
 
