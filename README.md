@@ -5,7 +5,7 @@
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
 <!-- MCP_SERVER_BADGE_START -->
-![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-38-2ea44f)
+![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-39-2ea44f)
 <!-- MCP_SERVER_BADGE_END -->
 
 ## Contents
@@ -48,6 +48,7 @@
 - [eliotk/npi-registry-mcp-server](https://github.com/eliotk/npi-registry-mcp-server) - MCP server for searching the U.S. NPI registry of healthcare providers and organizations.
 - [JamesANZ/medical-mcp](https://github.com/JamesANZ/medical-mcp) - MCP server that aggregates medical data from FDA, WHO, PubMed, Google Scholar, and RxNorm APIs.
 - [profliuhao/MedixHub](https://github.com/profliuhao/MedixHub) - MCP server bundling medical APIs (OpenTargets, FDA drug labels, Monarch) via a single tool registry.
+- [yumaheymans/carejobs-mcp](https://github.com/yumaheymans/carejobs-mcp) - Remote MCP server for US healthcare job postings and the hourly pay employers post (read-only, no API key).
 
 ## Personal Health & Wearables
 
