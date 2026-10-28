@@ -5,7 +5,7 @@
 > Curated list of awesome Model Context Protocol (MCP) servers for health
 
 <!-- MCP_SERVER_BADGE_START -->
-![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-38-2ea44f)
+![Health MCP entries](https://img.shields.io/badge/Health%20MCP%20entries-39-2ea44f)
 <!-- MCP_SERVER_BADGE_END -->
 
 ## Contents
@@ -22,6 +22,7 @@
 - [flexpa/mcp-fhir](https://github.com/flexpa/mcp-fhir) - Lightweight MCP server for FHIR resource search and read operations.
 - [jmandel/health-record-mcp](https://github.com/jmandel/health-record-mcp) - MCP server that connects to EHR systems and exposes clinical record data.
 - [OHNLP/omop_mcp](https://github.com/OHNLP/omop_mcp) - OMOP-focused MCP server for clinical concept mapping and terminology workflows.
+- [OMOPHub/omophub-mcp](https://github.com/OMOPHub/omophub-mcp) - MCP server for searching, mapping, and navigating OHDSI OMOP vocabularies (SNOMED CT, ICD-10, RxNorm, LOINC).
 - [rkirkendall/medplum-mcp](https://github.com/rkirkendall/medplum-mcp) - MCP server for Medplum FHIR with comprehensive CRUD tooling across clinical resources.
 - [the-momentum/fhir-mcp-server](https://github.com/the-momentum/fhir-mcp-server) - FHIR MCP server enabling CRUD operations on FHIR resources plus document search and terminology integration.
 - [wso2/fhir-mcp-server](https://github.com/wso2/fhir-mcp-server) - FHIR MCP server with SMART-on-FHIR authentication and multi-transport support.
